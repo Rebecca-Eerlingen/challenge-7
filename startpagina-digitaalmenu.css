@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cute+Font&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* navigatiebalk */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #575757; /* Donkergrijze achtergrond */
+    padding: 15px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #f4a261
+}
+
+.icons {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+.material-symbols-outlined {
+    transition: color 0.3s;
+}
+
+.material-symbols-outlined:hover {
+    color: #f4a261;
+}
+
+
+.nav-links {
+    display: flex;
+    margin-left: 200px;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+/* Hover effect voor links */
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+
+/* start gedeelte bovenaan. 
+(Dat met de foto en Mees tekst)*/
+body{
+    margin: 0;
+    font-family: "Caveat", cursive;
+    background-color: rgb(56, 56, 56);
+}
+
+.top-balk{
+    min-height: 100px;
+    background-color: rgb(58, 58, 58);
+}
+
+
+.background-start p {
+    font-size: medium;
+}
+
+.background-start{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    z-index: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
