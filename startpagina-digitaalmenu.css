@@ -7,12 +7,13 @@
     padding: 15px 20px;
     color: white;
     border-radius: 5px;
+    margin: 10px;
 }
 
 .logo {
     font-size: 2.4rem;
     font-weight: bold;
-    color: #f4a261
+    color: #f4a261;
 }
 
 .icons {
@@ -29,7 +30,6 @@
     color: #f4a261;
 }
 
-
 .nav-links {
     display: flex;
     margin-left: 200px;
@@ -40,19 +40,63 @@
     margin-bottom: 0;
 }
 
-.nav-links a {
+.nav-links button {
     text-decoration: none;
     text-align: left;
     color: white;
     font-size: 1.5rem;
     transition: color 0.3s;
+    margin: 10px;
+    background-color: #575757;
+    border: none;
+    font-family: "Caveat", cursive;
 }
 
-/* Hover effect voor links */
-.nav-links a:hover {
+/* Hover effect voor links*/
+.nav-links button:hover {
     color: #f4a261;
 }
 
+/*dropdown menu*/
+
+.navbar .start-pagina{
+    color: #f4a261;
+}
+
+.navbar:hover .dropbtn {
+    color: #f4a261;
+}
+
+.content a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4b4b4b;
+    top: 50px;
+    left: 90px;
+    display: block;
+    position: relative;
+    padding: 20px 25px;
+}
+
+.navbar a{
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color:#f4a261;
+    background-color: #666666;
+}
+
+.navbar .content {
+    position: absolute;
+    margin-bottom: 50px ;
+    color: black;
+    display: none;
+}
+
+.navbar:hover .content{
+    display: block;
+}
 
 /* start gedeelte bovenaan. 
 (Dat met de foto en Mees tekst)*/
@@ -74,6 +118,7 @@ body{
 
 .background-start{
     background-image: url(background.jpg);
+    box-shadow: 0 0 15px 15px #3b3b3b inset;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,7 +129,9 @@ body{
     justify-content: center;
     align-items: center;
 
-    color: white;
+    color: #ffffff;
     font-size: 5rem;
     text-align: center;
 }
+
+
