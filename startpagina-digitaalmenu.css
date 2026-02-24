@@ -59,11 +59,11 @@
 
 /*dropdown menu*/
 
-.navbar .start-pagina{
+.dropdown .start-pagina{
     color: #f4a261;
 }
 
-.navbar:hover .dropbtn {
+.dropdown:hover .dropbtn {
     color: #f4a261;
 }
 
@@ -72,29 +72,30 @@
     color: #ffffff;
     background-color: #4b4b4b;
     top: 50px;
-    left: 90px;
+    /* left: 90px; */
     display: block;
     position: relative;
     padding: 20px 25px;
+
 }
 
-.navbar a{
+.dropdown a{
     transition: 0.3s;
 }
 
-.navbar a:hover{
+.dropdown a:hover{
     color:#f4a261;
     background-color: #666666;
 }
 
-.navbar .content {
+.dropdown .content {
     position: absolute;
     margin-bottom: 50px ;
     color: black;
     display: none;
 }
 
-.navbar:hover .content{
+.dropdown:hover .content{
     display: block;
 }
 
@@ -133,5 +134,4 @@ body{
     font-size: 5rem;
     text-align: center;
 }
-
 
