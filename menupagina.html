@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu – Mees</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Mees</div>
+
+        <ul class="nav-links">
+            <button onclick="location.href='startpagina-digitaalmenu.html'">Start</button>
+            <button class="start-pagina">Menu</button>
+            <button>Home</button>
+            <button>Inloggen</button>
+        </ul>
+
+        <ul class="icons">
+            <span class="material-symbols-outlined">shopping_cart</span>
+        </ul>
+    </div>
+
+    <div class="menu-container">
+
+        <div class="menu-item">
+            <h2>Broodje Kaas</h2>
+            <img src=placeholder.png></img>
+            <p>Vers broodje met jonge kaas</p>
+            <p>€3,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('Broodje Kaas')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>Croissant</h2>
+            <img src=placeholder.png></img>
+
+            <p>Vers gebakken croissant</p>
+            <p>€2,20</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('Croissant')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>Koffie</h2>
+            <img src=placeholder.png></img>
+            <p>Verse koffie</p>
+            <p>€2,00</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('Koffie')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.favoriet').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('actief');
+            });
+        });
+
+        function addToCart(item) {
+            alert(item + ' is toegevoegd aan je winkelkar!');
+        }
+    </script>
+
+</body>
+</html>
