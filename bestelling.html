@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestelling Afronden – Mees</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Mees</div>
+        <ul class="nav-links">
+            <button onclick="window.location.href='index.html'">Start</button>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href='menupagina.html'">Menu</button>
+                <div class="content">
+                    <a href="menupagina.html">Broodjes</a>
+                    <a href="menupagina.html">Drinken</a>
+                    <a href="menupagina.html">Snacks</a>
+                    <a href="menupagina.html">Gebakjes</a>
+                </div>
+            </div>
+            <button onclick="window.location.href='loginpagina.html'">Inloggen</button>
+        </ul>
+        <ul class="icons">
+            <span onclick="window.location.href='karretje.html'" class="material-symbols-outlined">shopping_cart</span>
+        </ul>
+    </div>
+
+    <div class="ordercontainer">
+        <h1>Bestelling afronden</h1>
+        <p>Controleer uw bestelling voordat u betaalt.</p>
+
+        <div class="order-item">
+            <img src="placeholder.png" alt="Broodje Kaas">
+            <div class="order-item-info">
+                <h2>Broodje Kaas</h2>
+                <p>Vers broodje met jonge kaas</p>
+            </div>
+            <div>
+                <label>Aantal:</label>
+                <input class="aantal-input" type="number" value="1" min="1">
+            </div>
+            <p>€3,50</p>
+        </div>
+
+        <div class="order-item">
+            <img src="placeholder.png" alt="Koffie">
+            <div class="order-item-info">
+                <h2>Koffie</h2>
+                <p>Verse koffie</p>
+            </div>
+            <div>
+                <label>Aantal:</label>
+                <input class="aantal-input" type="number" value="2" min="1">
+            </div>
+            <p>€4,00</p>
+        </div>
+
+        <div style="text-align: right; margin-top: 20px;">
+            <h2 style="color: #f4a261;">Totaal: €7,50</h2>
+        </div>
+
+        <div class="button-group" style="margin-top: 30px;">
+            <button class="btn btn-secondary" onclick="window.location.href='karretje.html'">← Terug naar winkelmand</button>
+            <button class="btn btn-primary" onclick="alert('Bedankt voor uw bestelling!')">Betalen</button>
+        </div>
+    </div>
+</body>
+</html>

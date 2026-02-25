@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cute+Font&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cute+Font&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Loginpagina */
+
 
 .logintxt {
-    color: rgb(105, 32, 32);
+    color: #f4a261;
     font-family: "Caveat", cursive;
     margin-bottom: 50px;
 }
 
 .logindiv {
-    background-color: rgb(233, 233, 233);
+    background-color: #575757;
     max-width: 400px;
     min-height: 380px;
     display: flex;
@@ -39,22 +44,416 @@
 
 .emailbox:focus,
 .passbox:focus {
-    border-color: #66afe9; 
-    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    border-color: #f4a261; 
+    box-shadow: #f4a261;
 }
 
 .regknop {
     width: 300px;
-    background-color:gray ;
-    font-family: "Open Sans", sans-serif;
-    background-color:gray ;
+    background-color:#f4a261 ;
+    font-family: "Caveat", cursive;
+    font-size: 21px;
+    background-color:#f4a261 ;
     border-radius: 10px;
 }
 
 .loginknop {
     width: 300px;
     margin-top: 20px;
-    background-color:gray ;
-    font-family: "Open Sans", sans-serif;
+    background-color:#f4a261 ;
+    font-family: "Caveat", cursive;
+    font-size: 21px;
     border-radius: 10px;
 }
+
+/* startpagina */
+
+/* navigatiebalk */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #575757; /* Donkergrijze achtergrond */
+    padding: 15px 20px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.kar {
+    padding-left: 200px;
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #f4a261;
+}
+
+.icons {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+.material-symbols-outlined {
+    transition: color 0.3s;
+}
+
+.material-symbols-outlined:hover {
+    color: #f4a261;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: 200px;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-links button {
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    margin: 10px;
+    background-color: #575757;
+    border: none;
+    font-family: "Caveat", cursive;
+}
+
+/* Hover effect voor links*/
+.nav-links button:hover {
+    color: #f4a261;
+}
+
+/*dropdown menu*/
+
+.dropdown .start-pagina{
+    color: #f4a261;
+}
+
+.dropdown:hover .dropbtn {
+    color: #f4a261;
+}
+
+.content a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4b4b4b;
+    top: 50px;
+    /* left: 90px; */
+    display: block;
+    position: relative;
+    padding: 20px 25px;
+
+}
+
+.dropdown a{
+    transition: 0.3s;
+}
+
+.dropdown a:hover{
+    color:#f4a261;
+    background-color: #666666;
+}
+
+.dropdown .content {
+    position: absolute;
+    margin-bottom: 50px ;
+    color: black;
+    display: none;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+/* start gedeelte bovenaan. 
+(Dat met de foto en Mees tekst)*/
+body{
+    margin: 0;
+    font-family: "Caveat", cursive;
+    background-color: rgb(56, 56, 56);
+}
+
+.top-balk{
+    min-height: 100px;
+    background-color: rgb(58, 58, 58);
+}
+
+
+.background-start p {
+    font-size: medium;
+}
+
+.background-start{
+    background-image: url(background.jpg);
+    box-shadow: 0 0 15px 15px #3b3b3b inset;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    z-index: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* menupagina */
+
+body{
+    margin: 0;
+    font-family: "Caveat", cursive;
+    background-color: rgb(56, 56, 56);
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #575757;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #f4a261;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: 200px;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-links button {
+    color: white;
+    font-size: 1.5rem;
+    background-color: #575757;
+    border: none;
+    cursor: pointer;
+    font-family: "Caveat", cursive;
+    transition: color 0.3s;
+}
+
+.nav-links button:hover{
+    color: #f4a261;
+}
+
+.navbar .start-pagina{
+    color: #f4a261;
+}
+
+.icons{
+    display: flex;
+    margin-left: auto;
+}
+
+.material-symbols-outlined{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.material-symbols-outlined:hover{
+    color: #f4a261;
+}
+
+
+.menu-container{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.menu-item{
+    background-color: #4b4b4b;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.menu-item h2{
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.menu-item p{
+    font-size: 1.2rem;
+}
+
+.menu-actions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.menu-actions button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+.menu-actions button:hover{
+    color: #f4a261;
+}
+
+.favoriet.actief{
+    color: #f4a261;
+}
+
+/* karretje */
+
+body {
+    background: linear-gradient(135deg, #3a3a3a 0%, #2d2d2d 100%);
+    font-family: caveat, cursive;
+    color: #dad9d9;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #4b4b4b;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    min-height: 400px;
+}
+.container2 {
+    max-width: 800px;
+    margin: 20px auto 0;
+    background-color: #4b4b4b;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    
+    
+}
+h1 {
+    color: #f4a261;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p {
+    color: #b0b0b0;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+    font-family: "Caveat", cursive;
+}
+
+.btn-primary {
+    background-color: #f4a261;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #f4a261;
+    box-shadow: 0 0 10px #f4a261;
+    text-shadow: 0 2px 5px rgba(34, 33, 33, 0.5);
+}
+
+
+.btn-secondary {
+    background-color: transparent;
+    color: #f4a261;
+    border: 2px solid #f4a261;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(244, 162, 97, 0.2);
+    border-color: #f4a261;
+    color: #f4a261;
+}
+
+/* Bestelling afronden */
+.ordercontainer {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #4b4b4b;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #575757;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.order-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.order-item-info {
+    flex-grow: 1;
+}
+
+.order-item-info h2 {
+    margin: 0;
+    color: #f4a261;
+}
+
+.aantal-input {
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #f4a261;
+    background-color: #3b3b3b;
+    color: white;
+    font-family: "Caveat", cursive;
+}
+
