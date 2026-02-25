@@ -14,16 +14,21 @@
 
     <div class="navbar">
         <div class="logo">Mees</div>
-
         <ul class="nav-links">
-            <button onclick="location.href='startpagina-digitaalmenu.html'">Start</button>
-            <button class="start-pagina">Menu</button>
-            <button>Home</button>
-            <button>Inloggen</button>
+            <button onclick="window.location.href='index.html'">Start</button>
+            <div class="dropdown">
+                <button class="dropbtn start-pagina" onclick="window.location.href='menupagina.html'">Menu</button>
+                <div class="content">
+                    <a href="menupagina.html">Broodjes</a>
+                    <a href="menupagina.html">Drinken</a>
+                    <a href="menupagina.html">Snacks</a>
+                    <a href="menupagina.html">Gebakjes</a>
+                </div>
+            </div>
+            <button onclick="window.location.href='loginpagina.html'">Inloggen</button>
         </ul>
-
         <ul class="icons">
-            <span class="material-symbols-outlined">shopping_cart</span>
+            <span onclick="window.location.href='karretje.html'" class="material-symbols-outlined">shopping_cart</span>
         </ul>
     </div>
 
