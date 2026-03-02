@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Caveat", cursive;
+    background-color: rgb(56, 56, 56);
+}
+
+img {
+    min-width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    
+
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #575757;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #f4a261;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: 200px;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-links button {
+    color: white;
+    font-size: 1.5rem;
+    background-color: #575757;
+    border: none;
+    cursor: pointer;
+    font-family: "Caveat", cursive;
+    transition: color 0.3s;
+}
+
+.nav-links button:hover{
+    color: #f4a261;
+}
+
+.navbar .start-pagina{
+    color: #f4a261;
+}
+
+.icons{
+    display: flex;
+    margin-left: auto;
+}
+
+.material-symbols-outlined{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.material-symbols-outlined:hover{
+    color: #f4a261;
+}
+
+
+.menu-container{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.menu-item{
+    background-color: #4b4b4b;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.menu-item h2{
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.menu-item p{
+    font-size: 1.2rem;
+}
+
+.menu-actions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.menu-actions button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+.menu-actions button:hover{
+    color: #f4a261;
+}
+
+.favoriet.actief{
+    color: #f4a261;
+}
+
+/* tablet */
+@media (max-width: 992px) {
+
+    .nav-links {
+        margin-left: 50px;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .nav-links button {
+        font-size: 1.3rem;
+    }
+
+    .menu-container {
+        padding: 30px;
+        gap: 20px;
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+/* mobiel*/
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .icons {
+        margin-left: 0;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .menu-container {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+/* kleinere telefoon */
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .nav-links button {
+        font-size: 1.1rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.6rem;
+    }
+
+    .menu-item h2 {
+        font-size: 1.6rem;
+    }
+
+    .menu-item p {
+        font-size: 1rem;
+    }
+
+    img {
+        height: 180px;
+    }
+}

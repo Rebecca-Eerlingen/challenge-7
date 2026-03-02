@@ -5,78 +5,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu – Mees</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menupagina.css">
 
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="i18n.js" defer></script>
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
     <div class="navbar">
         <div class="logo">Mees</div>
+
         <ul class="nav-links">
-            <button onclick="window.location.href='index.html'" data-i18n="nav-start">Start</button>
-            <div class="dropdown">
-                <button class="dropbtn start-pagina" onclick="window.location.href='menupagina.html'" data-i18n="nav-menu">Menu</button>
-                <div class="content">
-                    <a href="menupagina.html" data-i18n="nav-sandwiches">Broodjes</a>
-                    <a href="menupagina.html" data-i18n="nav-drinks">Drinken</a>
-                    <a href="menupagina.html" data-i18n="nav-snacks">Snacks</a>
-                    <a href="menupagina.html" data-i18n="nav-pastries">Gebakjes</a>
-                </div>
-            </div>
-            <button onclick="window.location.href='loginpagina.html'" data-i18n="nav-login">Inloggen</button>
+            <button onclick="location.href='startpagina-digitaalmenu.html'">Start</button>
+            <button class="start-pagina">Menu</button>
+            <button>Inloggen</button>
         </ul>
+
         <ul class="icons">
-            <span onclick="window.location.href='karretje.html'" class="material-symbols-outlined">shopping_cart</span>
-            <button id="lang-toggle" onclick="toggleLanguage()" class="lang-toggle">EN</button>
+            <span class="material-symbols-outlined">shopping_cart</span>
         </ul>
     </div>
 
     <div class="menu-container">
 
         <div class="menu-item">
-            <h2 data-i18n="item-cheese-sandwich">Broodje Kaas</h2>
-            <img src=placeholder.png></img>
-            <p data-i18n="desc-cheese-sandwich">Vers broodje met jonge kaas</p>
+            <h2>cola</h2>
+            <img src=width1960.webp></img>
+            <p>allergieën: n.v.t </p>
             <p>€3,50</p>
 
             <div class="menu-actions">
                 <button class="favoriet material-symbols-outlined">favorite</button>
                 <button class="material-symbols-outlined"
-                        onclick="addToCart('item-cheese-sandwich')">
+                        onclick="addToCart('cola')">
                     add_shopping_cart
                 </button>
             </div>
         </div>
 
         <div class="menu-item">
-            <h2 data-i18n="item-croissant">Croissant</h2>
-            <img src=placeholder.png></img>
-
-            <p data-i18n="desc-croissant">Vers gebakken croissant</p>
-            <p>€2,20</p>
+            <h2>cola zero</h2>
+            <img src=width1960zero.webp><mg>
+            <p>allergieën: n.v.t</p>
+            <p>€3,50</p>
 
             <div class="menu-actions">
                 <button class="favoriet material-symbols-outlined">favorite</button>
                 <button class="material-symbols-outlined"
-                        onclick="addToCart('item-croissant')">
+                        onclick="addToCart('cola zero')">
                     add_shopping_cart
                 </button>
             </div>
         </div>
 
         <div class="menu-item">
-            <h2 data-i18n="item-coffee">Koffie</h2>
-            <img src=placeholder.png></img>
-            <p data-i18n="desc-coffee">Verse koffie</p>
-            <p>€2,00</p>
+            <h2>fanta</h2>
+            <img src=fanta.webp></img>
+            <p>allergieën: n.v.t</p>
+            <p>€3,50</p>
 
             <div class="menu-actions">
                 <button class="favoriet material-symbols-outlined">favorite</button>
                 <button class="material-symbols-outlined"
-                        onclick="addToCart('item-coffee')">
+                        onclick="addToCart('fanta')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>fanta zero</h2>
+            <img src=fantazerosugar.webp></img>
+            <p>allergieën: n.v.t</p>
+            <p>€3,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('fanta zero')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>water</h2>
+            <img src=mineraalwaterpng.png></img>
+            <p>allergieën: </p>
+            <p>€3,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('water')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>bruisend water</h2>
+            <img src=bruisend-05-L-1024x1024.png></img>
+            <p>allergieën: </p>
+            <p>€3,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('bruisend water')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>broodje zalm</h2>
+            <img src=zalms.png></img>
+            <p>allergieën: vis, gluten </p>
+            <p>€4,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('broodje zalm')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>broodje vitaal kaas</h2>
+            <img src=kaas.png></img>
+            <p>allergieën: lactose, gluten, ei</p>
+            <p>€4,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('broodje vitaal kaas')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>broodje vitaal cervelaat</h2>
+            <img src=cervelaat.png></img>
+            <p>allergieën: lactose, gluten</p>
+            <p>€4,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('broodje vitaal cervelaat')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>broodje vitaal ham</h2>
+            <img src=vitaal-ham.png></img>
+            <p>allergieën: lactose, gluten, ham </p>
+            <p>€3,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('broodje vitaal ham')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+
+        <div class="menu-item">
+            <h2>broodje kip krokant</h2>
+            <img src=kip.png></img>
+            <p>allergieën: gluten </p>
+            <p>€4,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('broodje kip krokant')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>tosti ham kaas</h2>
+            <img src=hamtosti.png></img>
+            <p>allergieën: gluten, lactose </p>
+            <p>€3,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('tosti ham kaas')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>tosti kaas</h2>
+            <img src=tosti.png></img>
+            <p>allergieën: gluten, lactose </p>
+            <p>€3,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('tosti kaas')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>aardbijen smoothie</h2>
+            <img src=smoothie.webp></img>
+            <p>allergieën: n.v.t </p>
+            <p>€2,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('aardbijen smoothie')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>yoghurt met cruesli</h2>
+            <img src=cruesli.png></img>
+            <p>allergieën: noten, gluten, lactose </p>
+            <p>€3,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('yoghurt met cruesli')">
+                    add_shopping_cart
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <h2>drink yoghurt</h2>
+            <img src=drink.png></img>
+            <p>allergieën: lactose </p>
+            <p>€2,50</p>
+
+            <div class="menu-actions">
+                <button class="favoriet material-symbols-outlined">favorite</button>
+                <button class="material-symbols-outlined"
+                        onclick="addToCart('drink yoghurt')">
                     add_shopping_cart
                 </button>
             </div>
@@ -91,10 +278,8 @@
             });
         });
 
-        function addToCart(itemKey) {
-            const itemName = window.getTranslation(itemKey);
-            const msg = window.getTranslation('added-to-cart');
-            alert(itemName + ' ' + msg);
+        function addToCart(item) {
+            alert(item + ' is toegevoegd aan je winkelkar!');
         }
     </script>
 
