@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+    <script src="i18n.js" defer></script>
+    <title data-i18n="nav-start">Start</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Mees</div>
+        <ul class="nav-links">
+            <button class="start-pagina" onclick="window.location.href='index.html'" data-i18n="nav-start">Start</button>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href='menupagina.html'" data-i18n="nav-menu">Menu</button>
+                <div class="content">
+                    <a href="menupagina.html" data-i18n="nav-sandwiches">Broodjes</a>
+                    <a href="menupagina.html" data-i18n="nav-drinks">Drinken</a>
+                    <a href="menupagina.html" data-i18n="nav-snacks">Snacks</a>
+                    <a href="menupagina.html" data-i18n="nav-pastries">Gebakjes</a>
+                </div>
+            </div>
+            <button onclick="window.location.href='loginpagina.html'" data-i18n="nav-login">Inloggen</button>
+        </ul>
+        <ul class="icons">
+            <span onclick="window.location.href='karretje.html'" class="material-symbols-outlined">shopping_cart</span>
+            <button id="lang-toggle" onclick="toggleLanguage()" class="lang-toggle">EN</button>
+        </ul>
+    </div>
+
+    <div class="background-start">
+        <h1 data-i18n="index-welcome"> Welkom bij Mees! </h1>
+    </div>
+</body>
